@@ -17,12 +17,38 @@
 
 # Tuto část dopiš
 
-#def pridej(zvire, pocet):
-    
-#def odeber(zvire, pocet):
-    
+def pridej(tygr,opice,lev):
+# Funkce přidání slouží k tomu, abychom mohli pomocí programu přidat počet zvířat
+
+zvire = str(input("Zadej jaké zvíře bys chtěl z těchto 3 druhů tygr, lev, opice přidat."))
+pocet = int(input("Zadejte jaký počet tohoto zvířete byste chtěl přidat."))
+ if zvire == "tygr":
+tygr += pocet
+else print("Něco si zadal špatně")
+elif zvire == "lev":
+lev += pocet
+else print("Něco si zadal špatně")
+elif zvire == "opice":
+opice += pocet
+else print("Něco si zadal špatně")
+def odeber(opice, lev, tygr):
+# Funkce odeber slouží k tomu, abychom mohli pomocí programu odebrat určitý počet dané proměnné u které chceme počet zmenšit.
+zvire = str(input("Zadej jaké zvíře bys chtěl z těchto 3 druhů tygr, lev, opice odebrat."))
+pocet = int(input("Zadejte jaký počet tohoto zvířete byste chtěl odebrat."))
+ if zvire == "tygr":
+tygr -= pocet
+else print("Něco si zadal špatně")
+
+elif zvire == "lev":
+lev -= pocet
+else print("Něco si zadal špatně")
+
+elif zvire == "opice":
+opice -= pocet
+else print("Něco si zadal špatně")  
 #def vypis():
-    
+ # Funkce vypiš slouží, k tomu aby nám program napsal to co cheme, aby napsal. Př.:
+print("tygr")
 
 
 
