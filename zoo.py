@@ -17,9 +17,9 @@
 
 # Tuto část dopiš
 
-def pridej(tygr,opice,lev):
+def pridej(tygr, opice, lev):
 # Funkce přidání slouží k tomu, abychom mohli pomocí programu přidat počet zvířat
-
+global tygri, opice, lvy
 zvire = str(input("Zadej jaké zvíře bys chtěl z těchto 3 druhů tygr, lev, opice přidat."))
 pocet = int(input("Zadejte jaký počet tohoto zvířete byste chtěl přidat."))
  if zvire == "tygr":
@@ -48,7 +48,11 @@ opice -= pocet
 else print("Něco si zadal špatně")  
 #def vypis():
  # Funkce vypiš slouží, k tomu aby nám program napsal to co cheme, aby napsal. Př.:
-print("tygr")
+global tygri, opice, lvy
+print(f"počty zvířat v zoo:")
+print(f"tygři: {tygri}")
+print(f"lvy: {lvy}")
+print(f"opice: {opice}")
 
 
 
